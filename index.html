@@ -91,7 +91,7 @@
       };
     };
     //YOUR TURN: add your Mapbox token 
-    mapboxgl.accessToken = '<Add your Mapbox token >'; //Mapbox token 
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYm94d3UiLCJhIjoiY2toMnR4am94MDIxMDJ6cWwzY3o3d2c2eCJ9.9cDBMPqriWr6MvUSAYbubQ'; //Mapbox token 
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v11', //stylesheet location
@@ -104,7 +104,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: '<Replace with csv export link>',
+        url: "https://docs.google.com/spreadsheets/d/1tBzH5mBHkdxMsjMz5X1opwIVF5au2XBdwgXHBuVCNlU//gviz/tq?tqx=out:csv&sheet=Assignment25",
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
